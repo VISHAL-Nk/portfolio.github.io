@@ -1,63 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <h1>Hello, I'm [Your Name] 👋</h1>
-        <p>I am passionate about technology and problem-solving. Here's a glimpse of my work:</p>
-    </header>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section>
-        <h2>🛠️ Projects</h2>
-        <ul>
-            <li><strong>Project 1</strong>: A short description of your project1.</li>
-            <li><strong>Project 2</strong>: A short description of another project2.</li>
-        </ul>
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+    padding: 0 1rem;
+}
 
-        <h2>🚀 Skills</h2>
-        <ul>
-            <li>C++, Python, JavaScript</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Web Development (React.js, Node.js)</li>
-        </ul>
+header {
+    text-align: center;
+    padding: 2rem 0;
+}
 
-        <h2>🌐 Find Me Online</h2>
-        <ul>
-            <li><a href="https://github.com/your-github-username" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a></li>
-        </ul>
+header h1 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 0.5rem;
+}
 
-        <h2>Portfolio Topic</h2>
-        <dl>
-            <dt>Course Name</dt>
-            <dd>Algorithmic Problem Solving</dd>
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
 
-            <dt>Course Code</dt>
-            <dd>Course Code Placeholder</dd>
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-            <dt>Name</dt>
-            <dd>Your Name</dd>
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #4a90e2;
+}
 
-            <dt>SRN</dt>
-            <dd>Your SRN</dd>
+ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
 
-            <dt>Course Instructor</dt>
-            <dd>Instructor Name Placeholder</dd>
+ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+    border-left: 4px solid #4a90e2;
+}
 
-            <dt>University</dt>
-            <dd>Your University Name</dd>
+ul li strong {
+    color: #4a90e2;
+}
 
-            <dt>Portfolio Topic/Domain</dt>
-            <dd>Google</dd>
-        </dl>
+dl {
+    margin: 1rem 0;
+}
 
-        <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
-    </section>
-</body>
-</html>
+dt {
+    font-weight: bold;
+    color: #4a90e2;
+    margin-top: 1rem;
+}
+
+dd {
+    margin-left: 1rem;
+    color: #555;
+}
+
+blockquote {
+    margin: 2rem 0;
+    padding: 1rem;
+    font-style: italic;
+    background: #f9f9f9;
+    border-left: 4px solid #4a90e2;
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #4a90e2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    ul li {
+        font-size: 0.8rem;
+    }
+}
